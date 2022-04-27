@@ -1,0 +1,36 @@
+{
+  "name": "@onesignal/onesignal-vue3",
+  "version": "1.0.0",
+  "description": "Vue 3 OneSignal Plugin: Make it easy to integrate OneSignal with your Vue App!",
+  "author": "rgomezp",
+  "contributors": [
+    {
+      "name": "Rodrigo Gomez-Palacio"
+    }
+  ],
+  "license": "MIT",
+  "repository": "OneSignal/onesignal-vue3",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint . --ext .ts",
+    "build": "yarn run lint && tsc",
+    "prepare": "yarn run build"
+  },
+  "dependencies": {
+    "vue": "^3.2.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.20.0",
+    "@typescript-eslint/parser": "^5.20.0",
+    "eslint": "^8.13.0",
+    "typescript": "^4.6.3"
+  },
+  "keywords": [
+    "onesignal",
+    "push",
+    "notification",
+    "push notification",
+    "vue"
+  ]
+}
