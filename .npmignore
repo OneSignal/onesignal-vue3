@@ -8,6 +8,7 @@ build
 .rpt2_cache
 
 # misc
+example
 .DS_Store
 .env
 .env.local
