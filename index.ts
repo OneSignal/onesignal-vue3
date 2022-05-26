@@ -876,7 +876,7 @@ const OneSignalVue: IOneSignal = {
 
 const INJECT_KEY = "onesignal";
 
-export const useOneSignal = () => {
+export function useOneSignal(): IOneSignal {
   return inject(INJECT_KEY);
 }
 
