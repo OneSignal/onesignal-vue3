@@ -8,7 +8,6 @@ build
 .rpt2_cache
 
 # misc
-example
 .DS_Store
 .env
 .env.local
@@ -20,3 +19,5 @@ example
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+example

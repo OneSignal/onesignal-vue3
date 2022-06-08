@@ -15,6 +15,18 @@ export default {
   },
   mounted() {
     this.$OneSignal.showSlidedownPrompt();
+    this.$OneSignal.on("permissionPromptDisplay", (e) => {
+      console.warn("permissionPromptDisplay", e)
+    })
+    this.$OneSignal.on("subscriptionChange", e => {
+      console.warn("subscriptionChange", e);
+    })
+    this.$OneSignal.on("notificationDisplay", e => {
+      console.warn("notificationDisplay", e);
+    })
+    this.$OneSignal.on("notificationDismiss", e => {
+      console.warn("notificationDismiss", e);
+    })
   }
 }
 </script>
