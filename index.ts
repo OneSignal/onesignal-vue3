@@ -1,4 +1,4 @@
-import { App, inject } from 'vue';
+import { App } from 'vue';
 
 const ONESIGNAL_SDK_ID = 'onesignal-sdk';
 const ONE_SIGNAL_SCRIPT_SRC = 'https://cdn.onesignal.com/sdks/OneSignalSDK.js';
@@ -874,17 +874,14 @@ const OneSignalVue: IOneSignal = {
 	sendOutcome,
 };
 
-const INJECT_KEY = "onesignal";
-
 export const useOneSignal = () => {
-  return inject(INJECT_KEY);
+  return OneSignalVue;
 }
 
 const OneSignalVuePlugin = {
   install(app: App, options: IInitObject) {
     app.config.globalProperties.$OneSignal = OneSignalVue as IOneSignal;
     app.config.globalProperties.$OneSignal.init(options);
-    app.provide(INJECT_KEY, OneSignalVue);
   }
 }
 
