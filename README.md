@@ -13,6 +13,9 @@ You can find more information on OneSignal [here](https://onesignal.com/).
 * 🏠 [Homepage](https://onesignal.com)
 * 🖤 [npm](https://www.npmjs.com/package/@onesignal/onesignal-vue3)
 
+> 🚧 Version 2 now in Beta! 
+See our [migration guide](./MigrationGuide.md) to get started.
+
 ## Contents
 - [Install](#install)
 - [Usage](#usage)
