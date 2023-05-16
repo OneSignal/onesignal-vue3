@@ -26,6 +26,9 @@ You can find more information on OneSignal [here](https://onesignal.com/).
 > 🚧 Version 2 now in Beta!
 See our [migration guide](./MigrationGuide.md) to get started.
 
+> 🚧 Version 2 now in Beta! 
+See our [migration guide](./MigrationGuide.md) to get started.
+
 ## Contents
 - [Install](#install)
 - [Usage](#usage)
