@@ -1,6 +1,6 @@
 {
   "name": "@onesignal/onesignal-vue3",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Vue 3 OneSignal Plugin: Make it easy to integrate OneSignal with your Vue App!",
   "author": "rgomezp",
   "contributors": [
@@ -23,6 +23,7 @@
     "@typescript-eslint/eslint-plugin": "^5.20.0",
     "@typescript-eslint/parser": "^5.20.0",
     "eslint": "^8.13.0",
+    "eslint-plugin-vue": "^9.17.0",
     "typescript": "^4.6.3"
   },
   "keywords": [
