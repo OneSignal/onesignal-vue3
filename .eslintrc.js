@@ -1,4 +1,5 @@
 module.exports = {
+  root: true,
   env: {
     browser: true,
     es6: true,
@@ -11,7 +12,6 @@ module.exports = {
         extensions: [
           ".js",
           ".ts",
-          ".tsx",
         ],
       },
     },
@@ -28,6 +28,9 @@ module.exports = {
   plugins: [
     '@typescript-eslint',
   ],
+  extends: [
+    'plugin:@typescript-eslint/recommended',
+  ],
   rules: {
     "prefer-destructuring": 0,
     "no-param-reassign": 0,
@@ -35,6 +38,7 @@ module.exports = {
     "dot-notation": 0,
     "no-continue": 0,
     "no-unused-vars": "off",
-    "@typescript-eslint/no-unused-vars": ["error"]
+    "@typescript-eslint/no-unused-vars": ["error"],
+    "no-prototype-builtins": "warn",
   },
 };
