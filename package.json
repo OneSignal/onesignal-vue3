@@ -4,11 +4,16 @@
   "description": "Vue 3 OneSignal Plugin: Make it easy to integrate OneSignal with your Vue App!",
   "author": "rgomezp",
   "contributors": [
-    { "name": "Rodrigo Gomez-Palacio" },
-    { "name": "Enzo Innocenzi" }
+    {
+      "name": "Rodrigo Gomez-Palacio"
+    },
+    {
+      "name": "Enzo Innocenzi"
+    }
   ],
   "license": "MIT",
   "repository": "OneSignal/onesignal-vue3",
+  "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
