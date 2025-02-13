@@ -1,9 +1,9 @@
+import { Octokit } from "@octokit/action"
+
 /**
  * Based on probot-metadata - https://github.com/probot/metadata
  */
 const regex = /\n\n<!-- probot = (.*) -->/
-
-const { Octokit } = require("@octokit/action")
 
 const octokit = new Octokit()
 
