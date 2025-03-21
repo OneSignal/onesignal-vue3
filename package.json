@@ -16,9 +16,9 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "lint": "./node_modules/.bin/eslint . --ext .ts",
-    "build": "yarn run lint && tsc",
-    "prepare": "yarn run build"
+    "lint": "eslint . --ext .ts",
+    "build": "npm run lint && tsc",
+    "prepare": "npm run build"
   },
   "dependencies": {
     "vue": "^3.2.0"

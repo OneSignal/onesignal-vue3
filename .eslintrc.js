@@ -4,33 +4,27 @@ module.exports = {
     browser: true,
     es6: true,
     node: true,
+    worker: true,
   },
   settings: {
     "import/resolver": {
       node: {
         paths: ["src"],
-        extensions: [
-          ".js",
-          ".ts",
-        ],
+        extensions: [".js", ".ts"],
       },
     },
   },
   globals: {
-    Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly',
+    Atomics: "readonly",
+    SharedArrayBuffer: "readonly",
   },
-  parser: '@typescript-eslint/parser',
+  parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaVersion: 2018,
-    sourceType: 'module',
+    sourceType: "module",
   },
-  plugins: [
-    '@typescript-eslint',
-  ],
-  extends: [
-    'plugin:@typescript-eslint/recommended',
-  ],
+  plugins: ["@typescript-eslint"],
+  extends: ["plugin:@typescript-eslint/recommended"],
   rules: {
     "prefer-destructuring": 0,
     "no-param-reassign": 0,
