@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.2.1](https://github.com/OneSignal/onesignal-vue3/compare/2.2.0...2.2.1) (2025-03-28)
+
+### Bug Fixes
+
+* add promise reject for init call ([da28464](https://github.com/OneSignal/onesignal-vue3/commit/da28464e8c233ae37824db57b349ab49f01fca55))
+
 ## [2.2.0](https://github.com/OneSignal/onesignal-vue3/compare/2.1.0...2.2.0) (2025-03-24)
 
 ### Features
