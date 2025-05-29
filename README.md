@@ -1,7 +1,7 @@
 <h1 align="center">Welcome to onesignal-vue3 👋</h1>
 <p>
-  <a href="https://www.npmjs.com/package/onesignal-vue3" target="_blank">
-    <img alt="Version" src="https://img.shields.io/npm/v/onesignal-vue3.svg">
+  <a href="https://www.npmjs.com/package/@onesignal/onesignal-vue3" target="_blank">
+    <img alt="Version" src="https://img.shields.io/npm/v/@onesignal/onesignal-vue3.svg">
   </a>
   <a href="https://github.com/OneSignal/onesignal-vue3#readme" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
