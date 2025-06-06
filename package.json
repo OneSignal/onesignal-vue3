@@ -30,6 +30,13 @@
     "eslint-plugin-vue": "^9.17.0",
     "typescript": "^4.6.3"
   },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    "MigrationGuide.md"
+  ],
   "keywords": [
     "onesignal",
     "push",
