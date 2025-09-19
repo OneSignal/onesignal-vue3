@@ -35,4 +35,5 @@ module.exports = {
     "@typescript-eslint/no-unused-vars": ["error"],
     "no-prototype-builtins": "warn",
   },
+  ignorePatterns: ["dist/", "../dist/", "node_modules/"],
 };

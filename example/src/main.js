@@ -1,8 +1,9 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import OneSignalVuePlugin from '@onesignal/onesignal-vue3'
+import OneSignalVuePlugin from "@onesignal/onesignal-vue3";
+import { createApp } from "vue";
+import App from "./App.vue";
 
-createApp(App).use(OneSignalVuePlugin, {
-  appId: "68e76706-41e1-4990-925b-8304c9a5deed",
-  allowLocalhostAsSecureOrigin: true
-}).mount('#app')
+createApp(App)
+  .use(OneSignalVuePlugin, {
+    appId: "77e32082-ea27-42e3-a898-c72e141824ef",
+  })
+  .mount("#app");
