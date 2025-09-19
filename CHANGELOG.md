@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.3.0](https://github.com/OneSignal/onesignal-vue3/compare/2.2.2...2.3.0) (2025-09-19)
+
+### Features
+
+* add new custom events `trackEvent` method ([aaac2d8](https://github.com/OneSignal/onesignal-vue3/commit/aaac2d8b45e6aef390d2fd03e3372aa417556705))
+
 ## [2.2.2](https://github.com/OneSignal/onesignal-vue3/compare/2.2.1...2.2.2) (2025-06-06)
 
 ### Bug Fixes
