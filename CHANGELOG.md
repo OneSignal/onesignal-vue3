@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.3.3](https://github.com/OneSignal/onesignal-vue3/compare/2.3.2...2.3.3) (2026-01-05)
+
+### Bug Fixes
+
+* update init object interface ([#76](https://github.com/OneSignal/onesignal-vue3/issues/76)) ([4f6720e](https://github.com/OneSignal/onesignal-vue3/commit/4f6720e21e1368f77054207fdc1a77f9f56d0037))
+
 ## [2.3.2](https://github.com/OneSignal/onesignal-vue3/compare/2.3.1...2.3.2) (2025-12-26)
 
 ### Build System
