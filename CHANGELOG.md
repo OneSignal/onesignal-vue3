@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.5.0](https://github.com/OneSignal/onesignal-vue3/compare/2.4.0...2.5.0) (2026-02-27)
+
+### Features
+
+* add `IDisplayableOSNotification` type  ([#80](https://github.com/OneSignal/onesignal-vue3/issues/80)) ([cedfd3f](https://github.com/OneSignal/onesignal-vue3/commit/cedfd3f422b6d64010cb224083f2dba3ef745031))
+
 ## [2.4.0](https://github.com/OneSignal/onesignal-vue3/compare/2.3.3...2.4.0) (2026-02-25)
 
 ### Features
