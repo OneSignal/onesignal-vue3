@@ -13,22 +13,29 @@
   ],
   "license": "MIT",
   "repository": "OneSignal/onesignal-vue3",
-  "main": "dist/index.js",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
   "scripts": {
-    "lint": "eslint . --ext .ts",
-    "build": "npm run lint && tsc",
-    "prepare": "npm run build"
+    "lint": "vp lint",
+    "build": "vp pack"
   },
   "dependencies": {
     "vue": "^3.2.0"
   },
+  "overrides": {
+    "vite": "npm:@voidzero-dev/vite-plus-core@0.1.21"
+  },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.20.0",
-    "@typescript-eslint/parser": "^5.20.0",
-    "eslint": "^8.13.0",
-    "eslint-plugin-vue": "^9.17.0",
-    "typescript": "^4.6.3"
+    "typescript": "^6.0.3",
+    "vite-plus": "0.1.21"
   },
   "files": [
     "dist"
@@ -39,5 +46,6 @@
     "notification",
     "push notification",
     "vue"
-  ]
+  ],
+  "packageManager": "bun@1.3.13"
 }

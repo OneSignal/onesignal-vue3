@@ -1,29 +1,24 @@
 # example-vue3
 
-## Project setup
+A minimal Vue 3 app showcasing `@onesignal/onesignal-vue3`.
 
-```
-npm install
-```
+## Setup
 
-### Compiles and hot-reloads for development
+Replace `<YOUR_APP_ID>` in `src/main.ts` with your OneSignal app id.
 
-```
-npm run serve
-```
+## Available Scripts
 
-### Compiles and minifies for production
+In the project directory, you can run:
 
-```
-npm run build
-```
+### `npm start`
 
-### Lints and fixes files
+Builds the parent `@onesignal/onesignal-vue3` package, packs it as a tarball,
+installs it locally, and runs the dev server. Open
+[http://localhost:4000](http://localhost:4000) to view the app.
 
-```
-npm run lint
-```
+The page will reload if you make edits.
 
-### Customize configuration
+## Re-running setup
 
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Run `vp run setup` to rebuild the parent package and re-install the freshly
+packed tarball into the example.
