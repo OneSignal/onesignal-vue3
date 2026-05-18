@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.5.1](https://github.com/OneSignal/onesignal-vue3/compare/2.5.0...2.5.1) (2026-05-18)
+
+### Build System
+
+* migrate to vite-plus toolchain ([#81](https://github.com/OneSignal/onesignal-vue3/issues/81)) ([67e7b21](https://github.com/OneSignal/onesignal-vue3/commit/67e7b21248b8d881920f2366f5e52448a68dd3d2))
+
 ## [2.5.0](https://github.com/OneSignal/onesignal-vue3/compare/2.4.0...2.5.0) (2026-02-27)
 
 ### Features
