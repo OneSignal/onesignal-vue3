@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.5.2](https://github.com/OneSignal/onesignal-vue3/compare/2.5.1...2.5.2) (2026-05-20)
+
+### Bug Fixes
+
+* publish missing dist files ([#82](https://github.com/OneSignal/onesignal-vue3/issues/82)) ([670470c](https://github.com/OneSignal/onesignal-vue3/commit/670470c24d6b563e2172a8b0b655fa3763d531c9))
+
 ## [2.5.1](https://github.com/OneSignal/onesignal-vue3/compare/2.5.0...2.5.1) (2026-05-18)
 
 ### Build System
