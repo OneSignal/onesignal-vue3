@@ -6,6 +6,7 @@ const DEFAULT_SCRIPT_SRC =
 
 let isOneSignalInitialized = false;
 let isOneSignalScriptFailed = false;
+let pendingInitReject: ((reason?: unknown) => void) | null = null;
 
 if (typeof window !== 'undefined') {
   window.OneSignalDeferred = window.OneSignalDeferred || [];
@@ -15,6 +16,10 @@ if (typeof window !== 'undefined') {
 
 function handleOnError() {
   isOneSignalScriptFailed = true;
+  if (pendingInitReject) {
+    pendingInitReject(new Error('OneSignal script failed to load.'));
+    pendingInitReject = null;
+  }
 }
 
 function addSDKScript(scriptSrc?: string) {
@@ -27,8 +32,6 @@ function addSDKScript(scriptSrc?: string) {
   script.defer = true;
   script.src = scriptSrc || DEFAULT_SCRIPT_SRC;
 
-  // Always resolve whether or not the script is successfully initialized.
-  // This is important for users who may block cdn.onesignal.com w/ adblock.
   script.onerror = () => {
     handleOnError();
   };
@@ -76,10 +79,16 @@ const init = (options: IInitObject): Promise<void> => {
     options.welcomeNotification.disable = options.welcomeNotification.disabled;
   }
 
+  if (!isPushNotificationsSupported()) {
+    return Promise.reject(new Error('This browser does not support Web Push notifications.'));
+  }
+
   addSDKScript(options.scriptSrc);
 
   return new Promise<void>((resolve, reject) => {
+    pendingInitReject = reject;
     window.OneSignalDeferred?.push((OneSignal) => {
+      pendingInitReject = null;
       OneSignal.init(options)
         .then(() => {
           isOneSignalInitialized = true;
