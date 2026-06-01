@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.5.3](https://github.com/OneSignal/onesignal-vue3/compare/2.5.2...2.5.3) (2026-06-01)
+
+### Bug Fixes
+
+* reject init() when push is unsupported or script fails to load ([#85](https://github.com/OneSignal/onesignal-vue3/issues/85)) ([e8131ca](https://github.com/OneSignal/onesignal-vue3/commit/e8131cafd13e91af67893cdea1a1c81e2bfb3ba3))
+
 ## [2.5.2](https://github.com/OneSignal/onesignal-vue3/compare/2.5.1...2.5.2) (2026-05-20)
 
 ### Bug Fixes
