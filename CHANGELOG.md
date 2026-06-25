@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.5.4](https://github.com/OneSignal/onesignal-vue3/compare/2.5.3...2.5.4) (2026-06-25)
+
+### Bug Fixes
+
+* update dependencies ([#86](https://github.com/OneSignal/onesignal-vue3/issues/86)) ([f36cc66](https://github.com/OneSignal/onesignal-vue3/commit/f36cc666880f736a7b69b9a3bb09344f7e4d0641))
+
 ## [2.5.3](https://github.com/OneSignal/onesignal-vue3/compare/2.5.2...2.5.3) (2026-06-01)
 
 ### Bug Fixes
